@@ -1,13 +1,13 @@
 # ktnsrm
 
-Spectral models and Spectral Representation Method
+Spectral power density models and Spectral Representation Method
 
 ## Introduction
 
 
 ## Usage
 
-- Define a Kanai Tajimi model;
+- Define a base Kanai Tajimi model;
 - Define both separable and non-separable evlutionary power spectral density models;
 - Generate sample realizations via the Spectral Representation Method;
 
