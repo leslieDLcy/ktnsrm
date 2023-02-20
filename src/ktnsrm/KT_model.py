@@ -1,16 +1,5 @@
 import numpy as np
 
-
-# class KT_model:
-
-#     def __init__(self, wg, zzeta, S0):
-#         self.wg = wg
-#         self.zzeta = zzeta
-#         self.S0 = S0
-
-
-
-
 def parameterize_KT_model(w, wg=5 * np.pi, zzeta = 0.63, S0= 0.011):
     return S0 * (wg**4 + 4*(zzeta**2)*(wg**2)*(w**2)) / (((wg**2-w**2)**2) + 4*(zzeta**2)*(wg**2)*(w**2))
 

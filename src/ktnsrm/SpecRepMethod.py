@@ -1,8 +1,10 @@
+"""
+Introduction
+============
+* implementation for the Kanai Tajimi model and also
+* implementation for Spectral Representation method by Shinozuka
+"""
 
-# implementation for the Kanai Tajimi model and also
-# implementation for Spectral Representation method by Shinozuka
-
-# from optparse import Values
 import numpy as np
 import math
 import matplotlib.pyplot as plt
@@ -11,9 +13,6 @@ import pandas as pd
 from scipy import interpolate
 from scipy.interpolate import griddata
 from utils import EPSD_show
-
-# from KT_model import parameterized_KT_model, Envelop_tfunc1, nonsta_model
-# np.random.seed(9527)
 
 
 class SRM:
@@ -132,16 +131,6 @@ class SRM:
         return x
 
 
-
-
-
-
-
-
-
-
-
-
     def SpecRepsentation3(self, Sww, t_bins, plot='y'):
         '''
         For now, this func received a spectra as argument,
@@ -177,10 +166,9 @@ class SRM:
         return simulation
 
 
-
     def SpecRepsentation2(self, Sww, t_bins, freqs, plot='y'):
         """
-        Idea:
+        Note
         ----
 
         From an estimated evolutionary spectra, do simulation.
@@ -190,7 +178,7 @@ class SRM:
         Based on 'Fs', 'duration' -> the time axis
         ergo, we will interpolate a spectra with shape (N1, duration * Fs)
 
-        Parameters:
+        Parameters
         -----------
         """
 
@@ -219,8 +207,6 @@ class SRM:
         '''
 
 
-
-
         # xx, yy = np.meshgrid(t_bins, freqs)
         # z = Sww
         # f = interpolate.interp2d(t_bins, freqs, z, 
@@ -240,55 +226,6 @@ class SRM:
         return self.SpecRepsentation(grid_z0)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # set up a simple function to plot the reference spectrum
-# def plot_reference_spectrum(w, wu):
-#     """
-#     show the reference spectrum of the random process, which is the psd function
-#     """
-#     plt.plot(w, parameterize_KT_model(w, wg=5 * np.pi, zzeta = 0.63, S0= 0.011), color='red', linewidth=2, label='the reference spectrum of the process')
-#     plt.xlim([0, wu])
-#     plt.legend()
-
-"""
-calculate the upper limit of time step
-i.e. Delta t <= 2*pi / 2*wu
-time precision -> sampling rate
-therefore, the sampling interval `dt` should be less than `t_upper_limit`
-the less `dt` then the higher `Fs`
-"""
-
-
-
-# the relation between `Fs` and `wu`
 
 
 

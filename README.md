@@ -2,15 +2,15 @@
 
 Spectral models and Spectral Representation Method
 
-## Installation
+## Introduction
 
-```bash
-$ pip install ktnsrm
-```
 
 ## Usage
 
-- TODO
+- Define a Kanai Tajimi model;
+- Define both separable and non-separable evlutionary power spectral density models;
+- Generate sample realizations via the Spectral Representation Method;
+
 
 ## Contributing
 

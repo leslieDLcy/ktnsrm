@@ -77,21 +77,7 @@ class SpecRep():
         return a_list
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     ##### displaying EPSD 2D/3D #####
-
-
     @staticmethod
     def EPSD_display(Pxx, freqs, t_bins, format, title_name='the estimated spectra'):
         """Given the 3 elements returned by plt.specgram
