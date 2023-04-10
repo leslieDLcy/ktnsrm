@@ -38,7 +38,7 @@ class SRM:
     #     w_axis = np.arange(0, self.wu, self.wu/self.N1)
     #     return w_axis 
 
-    def _SpecRepsentation0(self, Sww, plot='y'):
+    def _SpecRepsentation0(self, Sww, plotting=True):
         '''
         For now, this func received a spectra as argument,
         which may be obtained from 'getSww_from_a_model' func
@@ -60,10 +60,11 @@ class SRM:
         t_upper_limit = 2 * np.pi / (2 * self.wu)
         print("the lower limit of sampling frequency:", math.ceil(1 / t_upper_limit))
         print("the length of the simulation", simulation.shape)
-        if plot == 'y':
-            plt.plot(self.t_axis_4simu, simulation)
-            plt.xlabel('time [s]')
-            plt.ylabel('amp')
+        if plotting:
+            fig, ax = plt.subplots()
+            ax.plot(self.t_axis_4simu, simulation)
+            ax.set_xlabel('Time (s)')
+            ax.set_ylabel('Amplitude')
         return simulation
 
 

@@ -1,3 +1,6 @@
+""" a functional style of KT model """
+
+
 import numpy as np
 
 def parameterize_KT_model(w, wg=5 * np.pi, zzeta = 0.63, S0= 0.011):
