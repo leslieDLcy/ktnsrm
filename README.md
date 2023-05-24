@@ -16,7 +16,10 @@ Stochastic process models are responsible for characterising ground motions, rep
 ## Examples
 
 1. Kanai Tajimi model
-xxx
+
+$$S(\omega) = S_{0} \frac{1+[2 \zeta (\omega/\omega_{g})]^2}{[1-(\omega/\omega_{g})^2]^2+[2 \zeta (\omega/\omega_{g})]^2}$$
+
+where $w_{g}=5 \pi$ rad/s; $\zeta$ = 0.63; $S_{0}$ = 0.011;
 
 
 2. separable EPSD
