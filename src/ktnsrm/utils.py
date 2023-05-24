@@ -5,6 +5,21 @@ import pandas as pd
 from matplotlib import mlab
 from scipy.interpolate import griddata
 
+
+def save2Vis(figname):
+    """ a shortcut function to save plot to visualization dir 
+    
+    Note
+    ----
+    
+    We simply assume that every repo will have a 'visulizations' 
+    dir under the root directory
+    """
+    
+    axe = plt.gca()
+    plt.savefig(f'../visualizations/{figname}.png', format='png', dpi=300, bbox_inches='tight')
+
+
 def EPSD_show(Pxx, freqs, t_bins, format, title_name='the estimated spectra'):
         """Given the 3 elements returned by plt.specgram
         ie, (Pxx, freqs, t_bins)
