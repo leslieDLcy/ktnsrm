@@ -20,8 +20,7 @@ Stochastic process models are responsible for characterising ground motions, rep
 $$S(\omega) = S_{0} \frac{1+[2 \zeta (\omega/\omega_{g})]^2}{[1-(\omega/\omega_{g})^2]^2+[2 \zeta (\omega/\omega_{g})]^2}$$
 
 where $w_{g}=5 \pi$ rad/s; $\zeta$ = 0.63; $S_{0}$ = 0.011;
-<!-- ![alt text](visualizations/PSD.png "KanaiTajimi_PSD") -->
-<img src=visualizations/PSD.png alt="KanaiTajimi_PSD" width="50%" height="50%">
+<img src=visualizations/PSD.png alt="KanaiTajimi_PSD" width="70%" height="70%">
 
 
 2. **separable EPSD**
@@ -31,15 +30,13 @@ Define an evolutionary spectrum in the form $$S(\omega, t)=g(t)^2S(\omega)$$
 with an example of modulating function:
 $$g(t)=b(e^{-ct} - e^{-2ct})$$
 where $b$=4, $c$=0.8
-![alt text](visualizations/nonseparableEPSD.png "nonstationary EPSD")
-
+<img src=visualizations/nonseparableEPSD.png alt="nonstationary EPSD" width="70%" height="70%">
 
 3. **non-separable EPSD**
 
 An evolutionary spectrum with fully coupled time and frequency nonstationarity. Define an example EPS:
 $$S(\omega, t) =\frac{\omega^2}{5 \pi} e^{-0.15t} t^{2} e^{-(\frac{\omega}{5 \pi})^2 t}$$ 
-![alt text](visualizations/separableEPSD.png "separablenonstationary EPSD")
-
+<img src=visualizations/separableEPSD.png alt="separablenonstationary EPSD" width="70%" height="70%">
 
 4. Spectral Representation Method
 
