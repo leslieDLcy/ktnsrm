@@ -39,7 +39,8 @@ class SRM:
     #     return w_axis 
 
     def _SpecRepsentation0(self, Sww, plotting=True):
-        '''
+        ''' SRM for stationary PSD
+
         For now, this func received a spectra as argument,
         which may be obtained from 'getSww_from_a_model' func
         '''

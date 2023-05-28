@@ -31,12 +31,12 @@ class KT():
 
 
 
-    def get_sepEpsd(self, envelopfuncObj, t_axis):
-        """ create a separable evolutionary spectum 
+    def cp_SepEpsd(self, envelopfuncObj, t_axis):
+        """ create a separable evolutionary spectum with given envolop
         
         Hint
         ----
-        modulating_obj @ stationary_PSD
+        modulating_obj @ stationary_PSD; implicitly create property `self._sepEPSD`
 
 
         Parameters
@@ -56,8 +56,8 @@ class KT():
 
 
     @staticmethod
-    def nonsepEpsd(w_axis, t_axis):
-        """ create a non-separable evollutionary spectrum 
+    def cp_NonSepEpsd(w_axis, t_axis):
+        """ create a non-separable evolutionary spectrum 
         
         Parameters
         ----------        
@@ -75,6 +75,8 @@ class KT():
 
         a_list = np.vstack(a_list)
         return a_list
+
+
 
 
     ##### displaying EPSD 2D/3D #####
