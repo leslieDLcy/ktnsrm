@@ -10,7 +10,7 @@ Stochastic process models are responsible for characterising ground motions, rep
 ## *functionality*
 
 - [x] Define a base Kanai Tajimi model;
-- [x] Define both **separable** and **non-separable** evlutionary power spectral density models;
+- [x] Define both **separable** and **non-separable** evolutionary power spectral density models;
 - [x] Generate sample realizations via the Spectral Representation Method;
 - [x] A general framework enabling easy addition of more nonstationary models via subclassing.
 
