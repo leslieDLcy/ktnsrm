@@ -12,7 +12,7 @@ import itertools
 import pandas as pd
 from scipy import interpolate
 from scipy.interpolate import griddata
-from utils import EPSD_show
+from ktnsrm.utils import EPSD_show
 
 
 class SRM:
@@ -24,6 +24,10 @@ class SRM:
     # print('the cutoff frequency wu set as:', wu)
         self.t_axis_4simu = np.arange(0, self.duration, 1 / self.fs)  # dt = 1 / Fs
         self.w_axis_4simu = np.arange(0, self.wu, self.wu/self.N1)
+
+
+    def __str__(self):
+        return f'Frequency axis shape is {self.w_axis_4simu.shape} and Time axis shape is {self.t_axis_4simu.shape}'
 
     # @property
     # def t_axis_4simu(self):

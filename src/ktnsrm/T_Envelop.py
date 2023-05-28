@@ -1,9 +1,8 @@
 """
 a class for envelop modulating function in time domain `g(t)`
 """
-
-
 import numpy as np
+from functools import partial
 
 class Envelop():
 
@@ -11,7 +10,7 @@ class Envelop():
         self.t = t # t_axis
 
 
-    def get_default_envelop(self, key):
+    def get_envelop(self, key, **kwargs):
         """ a shortcut to get a modulating func by key
          
         Parameters
@@ -19,8 +18,8 @@ class Envelop():
         key : str,
             the name of the associated modulating function
         """
-        if key == 'liam':
-            return self.liam15()
+        if key == 'liam15':
+            return partial(self.liam15, **kwargs)
 
 
     def liam15(self, b=4, c=0.8):
