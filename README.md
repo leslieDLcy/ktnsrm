@@ -1,5 +1,5 @@
 # ktnsrm
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7979812.svg)](https://doi.org/10.5281/zenodo.7979812)
 Spectral power density models and Spectral Representation Method
 
 ## Introduction
