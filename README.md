@@ -44,6 +44,11 @@ $$S(\omega, t) =\frac{\omega^2}{5 \pi} e^{-0.15t} t^{2} e^{-(\frac{\omega}{5 \pi
 
 4. Spectral Representation Method
 
+Verification of the Spectral Representation Method with a stationary process with known PSD.
+
+<img src=visualizations/Esti_sto_process2.pngg alt="SRM" width="70%" height="70%">
+
+
 ## License
 
 `ktnsrm` was created by Y. Chen. It is licensed under the terms of the MIT license.
