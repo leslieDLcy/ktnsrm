@@ -46,7 +46,7 @@ $$S(\omega, t) =\frac{\omega^2}{5 \pi} e^{-0.15t} t^{2} e^{-(\frac{\omega}{5 \pi
 
 Verification of the Spectral Representation Method with a stationary process with known PSD.
 
-<img src=visualizations/Esti_sto_process2.pngg alt="SRM" width="70%" height="70%">
+<img src=visualizations/Esti_sto_process2.png alt="SRM" width="70%" height="70%">
 
 
 ## License
